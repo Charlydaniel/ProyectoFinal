@@ -3,10 +3,6 @@ import Users from "./user.model.js"
 
 const workspacesMemberSchemma = new mongoose.Schema(
     {
-        id:{
-            type:String,
-            required:true
-        },
         user:{
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
