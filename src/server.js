@@ -135,7 +135,7 @@ app.use('/api/users',user_router)
 app.use('/api/auth',auth_router)
 
 //MemberWokspaceRepository.create('68e07218144422349c955a10','68e11ba3ad69c5f26934bfd5')
-const workspaces_dl_usuario= await MemberWokspaceRepository.getAllWorkspacesByUserId('68e07218144422349c955a10')
+//const workspaces_dl_usuario= await MemberWokspaceRepository.getAllWorkspacesByUserId('68e07218144422349c955a10')
 // console.log(workspaces_dl_usuario)
 
 //INSERTS:
