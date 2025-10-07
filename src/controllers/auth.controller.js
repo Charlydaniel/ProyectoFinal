@@ -90,7 +90,7 @@ class AuthController {
             const { email, password } = request.body
 
             const user_found = await userRepository.getByEmail(email) 
-
+            
             if(user_found){
                 const is_same_password = await bcrypt.compare(password, user_found.password)
                 if (!is_same_password) {

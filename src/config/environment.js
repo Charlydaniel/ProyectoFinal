@@ -5,6 +5,7 @@ dotenv.config()
 const ENVIRONMENT={
     MONGO_DB_CONNECTION_STRING: process.env.MONGO_DB_CONNECTION_STRING,
     JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
-    GMAIL_PASSWORD:process.env.GMAIL_PASSWORD
+    GMAIL_PASSWORD:process.env.GMAIL_PASSWORD,
+    URL_API_BACKEND:process.env.URL_API_BACKEND
 }
 export default ENVIRONMENT

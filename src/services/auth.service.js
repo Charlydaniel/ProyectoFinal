@@ -41,7 +41,7 @@ class AuthService {
                 subject: 'Correo de verificacion UTN validacion de usuario',
                 html: `<h1>Hola desde Node.js<h1/>
                 <p>Este es un mail de verificacion<p/>
-                <a href='http://localhost:8080/api/auth/verify-email/${verification_token}'>Click para verificar<a/>`
+                <a href='${ENVIRONMENT.URL_API_BACKEND}api/auth/verify-email/${verification_token}'>Click para verificar<a/>`
 
             }
         )
