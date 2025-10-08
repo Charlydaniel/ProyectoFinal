@@ -114,6 +114,7 @@ app.get('/test-handle',async (request,response)=>{
     )
 })
 
+
 app.get('/workspace/:workspace_id',async (request,response)=>{
     const {workspace_id}=request.params
     const workspace_detail= await workspacesRepository.getById(workspace_id)
@@ -134,6 +135,14 @@ app.use('/api/workspaces', workspace_router)
 app.use('/api/users',user_router)
 app.use('/api/auth',auth_router)
 
+app.use('/api/status',(request,response)=>{
+    response.send(
+        {
+            ok:true,
+            message:pong
+        }
+    )
+})
 //MemberWokspaceRepository.create('68e07218144422349c955a10','68e11ba3ad69c5f26934bfd5')
 //const workspaces_dl_usuario= await MemberWokspaceRepository.getAllWorkspacesByUserId('68e07218144422349c955a10')
 // console.log(workspaces_dl_usuario)
